@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">movie app 2</string>
+    <string name="popular_fragment">Popular Fragment</string>
+    <string name="top_rated_fragment">Top Rated Fragment</string>
+</resources>
