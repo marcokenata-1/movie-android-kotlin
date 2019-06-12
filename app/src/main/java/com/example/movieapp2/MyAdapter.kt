@@ -17,6 +17,7 @@ class MyAdapter (private val myContext: Context, fm : FragmentManager, internal 
             0 -> {
                 return PopularFragment()
             }
+
             1 -> {
                 return TopRatedFragment()
             }
