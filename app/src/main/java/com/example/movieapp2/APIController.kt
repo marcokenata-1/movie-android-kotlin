@@ -23,7 +23,7 @@ class APIController: Callback<DataResponse> {
 
     override fun onResponse(call: Call<DataResponse>, response: Response<DataResponse>) {
         Log.d("CHANGES","11111111000000000")
-        Log.d("RESPONSE",response!!.body().toString())
+//        Log.d("RESPONSE",response!!.body().toString())
     }
 
     override fun onFailure(call: Call<DataResponse>, t: Throwable) {

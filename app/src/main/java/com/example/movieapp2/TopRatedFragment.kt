@@ -19,6 +19,7 @@ class TopRatedFragment : Fragment() {
 
         val view =  inflater!!.inflate(R.layout.fragment_top_rated,container,false)
 
+//        var teks = view?.findViewById<TextView>(R.id.testerAPITopRated)
 
 
 
@@ -32,15 +33,15 @@ class TopRatedFragment : Fragment() {
 
         call.enqueue(object : Callback<DataResponse> {
             override fun onResponse(call: Call<DataResponse>, response: Response<DataResponse>) {
-                Log.d("CHANGES","11111111000000000")
-                Log.d("RESPONSE",response!!.body().toString())
+//                Log.d("CHANGES","11111111000000000")
+                Log.d("RESPONSE-TOP RATED",response!!.body().toString())
 
                 var results = response.body()!!.results
                 var titles = ""
                 for (x in results) {
                     titles += x.title + "\n"
                 }
-                teks!!.text = titles
+//                teks!!.text = titles
             }
 
             override fun onFailure(call: Call<DataResponse>, t: Throwable) {

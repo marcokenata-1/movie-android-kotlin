@@ -27,3 +27,12 @@ data class Results (
     var video: Boolean,
     var vote_average:Number
 )
+
+data class GenreEnc (
+    var genres : ArrayList<Genre>
+)
+
+data class Genre (
+    var id: Int,
+    var name: String
+)

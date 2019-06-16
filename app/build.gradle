@@ -50,4 +50,7 @@ dependencies {
     implementation "com.squareup.retrofit2:converter-gson:2.5.0"
 
     implementation "io.reactivex.rxjava2:rxandroid:2.1.1"
+
+    //Image Handler
+    implementation 'com.squareup.picasso:picasso:2.71828'
 }

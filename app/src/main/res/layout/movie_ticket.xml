@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+
+    <ImageView
+            android:layout_width="195dp"
+            android:layout_height="216dp" app:srcCompat="@drawable/sample_image" android:id="@+id/ivMovieImage"/>
+    <TextView
+            android:text="Mad Max: Fury Road"
+            android:layout_width="match_parent"
+            android:layout_height="38dp" android:id="@+id/tvMovieName" android:gravity="left|center_vertical"
+            android:textStyle="bold"/>
+    <TextView
+            android:text="Action, Adventure, Fantasy"
+            android:layout_width="match_parent"
+            android:layout_height="38dp" android:id="@+id/tvGenreName" android:gravity="center_vertical"/>
+</LinearLayout>
