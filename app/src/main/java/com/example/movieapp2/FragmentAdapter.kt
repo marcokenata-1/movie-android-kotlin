@@ -18,6 +18,7 @@ class FragmentAdapter : BaseAdapter {
     constructor(context: Context?, listOfMovies: ArrayList<Results>){
         this.context = context
         this.listOfMovies = listOfMovies
+
     }
 
     override fun getView(p0: Int, p1: View?, p2: ViewGroup?): View {
@@ -31,7 +32,10 @@ class FragmentAdapter : BaseAdapter {
             .load(url)
             .into(movieView.ivMovieImage)
 
+        var genres = genreMatcher(movie.genre_ids)
+
         movieView.tvMovieName.text = movie.original_title
+        movieView.tvGenreName.text = genres
 
         movieView.setOnClickListener {
             val intent = Intent(context,MovieDetails::class.java)

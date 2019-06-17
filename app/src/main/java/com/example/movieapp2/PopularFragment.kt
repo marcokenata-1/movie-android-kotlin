@@ -32,9 +32,12 @@ class PopularFragment : Fragment(){
                 Log.d("RESPONSE-POPULAR",response!!.body().toString())
 
                 var results = response.body()!!.results
+
                 adapter = FragmentAdapter(getContext(),results)
 
+
                 gvListMovies.adapter = adapter
+
             }
 
             override fun onFailure(call: Call<DataResponse>, t: Throwable) {
@@ -44,10 +47,6 @@ class PopularFragment : Fragment(){
 
         return view
     }
-
-
-
-
 
 }
 

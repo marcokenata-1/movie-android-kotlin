@@ -5,7 +5,6 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.fragment_popular.*
 import retrofit2.Call
@@ -31,6 +30,9 @@ class TopRatedFragment : Fragment() {
             override fun onResponse(call: Call<DataResponse>, response: Response<DataResponse>) {
                 Log.d("RESPONSE-TOP RATED",response!!.body().toString())
                 var results = response.body()!!.results
+//                val callGenre = service.getGenres(apiKey,"en-US")
+
+
                 adapter = FragmentAdapter(getContext(),results)
 
                 gvListMovies.adapter = adapter
