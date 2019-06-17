@@ -32,7 +32,6 @@ fun genreMatcher(): ArrayList<Genre> {
     call.enqueue(object : Callback<GenreEnc> {
         override fun onResponse(call: Call<GenreEnc>, response: Response<GenreEnc>) {
             val responseJson = response.body()!!.genres
-            Log.d("RESPONSE-GENRE",responseJson.toString())
         }
 
         override fun onFailure(call: Call<GenreEnc>, t: Throwable) {

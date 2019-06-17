@@ -25,7 +25,7 @@ data class Results (
     var popularity: Number,
     var vote_count: Int,
     var video: Boolean,
-    var vote_average:Number
+    var vote_average:Double
 )
 
 data class GenreEnc (

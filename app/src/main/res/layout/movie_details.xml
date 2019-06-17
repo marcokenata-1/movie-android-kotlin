@@ -6,40 +6,64 @@
 
     <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="239dp" app:srcCompat="@drawable/sample_backdrop" android:id="@+id/imageView"/>
+            android:layout_height="231dp" app:srcCompat="@drawable/sample_backdrop" android:id="@+id/ivBackdrop"/>
 
     <ImageView
             android:layout_width="162dp"
             android:layout_marginTop="-50dp"
             android:layout_marginLeft="15dp"
-            android:layout_height="243dp" app:srcCompat="@drawable/sample_image" android:id="@+id/imageView2"/>
+            android:layout_height="243dp" app:srcCompat="@drawable/sample_image" android:id="@+id/ivMoviePoster"/>
+
+
+    <TextView
+            android:text="TextView"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="-180dp"
+            android:layout_width="168dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content" android:id="@+id/tvMovieTitle"/>
 
     <TextView
         android:text="TextView"
+        android:layout_marginTop="35dp"
         android:layout_marginLeft="200dp"
-        android:layout_marginTop="-180dp"
         android:layout_width="168dp"
-        android:layout_height="wrap_content" android:id="@+id/textView1"/>
+        android:layout_height="wrap_content" android:id="@+id/tvVoteAverage"/>
 
     <TextView
             android:text="TextView"
             android:layout_marginLeft="200dp"
             android:layout_marginTop="10dp"
             android:layout_width="168dp"
-            android:layout_height="wrap_content" android:id="@+id/textView2"/>
+            android:layout_height="wrap_content" android:id="@+id/tvVoteCount"/>
 
     <TextView
             android:text="TextView"
             android:layout_marginLeft="200dp"
             android:layout_marginTop="10dp"
             android:layout_width="168dp"
-            android:layout_height="wrap_content" android:id="@+id/textView3"/>
+            android:layout_height="wrap_content" android:id="@+id/tvReleaseDate"/>
 
     <TextView
             android:text="TextView"
             android:layout_marginLeft="200dp"
             android:layout_marginTop="10dp"
             android:layout_width="168dp"
-            android:layout_height="wrap_content" android:id="@+id/textView4"/>
+            android:layout_height="wrap_content" android:id="@+id/tvOriginalLanguage"/>
+
+    <TextView
+            android:text="Overview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView"
+            android:textStyle="bold" android:layout_marginTop="30dp" android:padding="5dp" android:textSize="20dp"/>
+
+    <TextView
+            android:text="Description"
+            android:layout_width="match_parent"
+            android:layout_height="157dp" android:id="@+id/tvDescription"
+            android:padding="20dp"
+            android:layout_marginTop="10dp"/>
+
 
 </LinearLayout>
