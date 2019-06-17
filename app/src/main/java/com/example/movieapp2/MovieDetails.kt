@@ -1,11 +1,9 @@
 package com.example.movieapp2
 
 import android.os.Bundle
-import android.os.PersistableBundle
 import androidx.appcompat.app.AppCompatActivity
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.movie_details.*
-import kotlinx.android.synthetic.main.movie_ticket.*
 
 class MovieDetails : AppCompatActivity(){
 

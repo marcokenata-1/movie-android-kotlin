@@ -19,7 +19,9 @@ fun retrofitHandler(url: String): Retrofit {
 
 }
 
-fun genreMatcher(): ArrayList<Genre> {
+var genres: ArrayList<Genre> = ArrayList()
+
+fun genreMatcher(){
     val genreUrl = "https://api.themoviedb.org/3/"
     val apiKey = "ddeb2407d89eb56ea96d59636397646a"
     var retrofitGenre = retrofitHandler(genreUrl)
@@ -27,11 +29,12 @@ fun genreMatcher(): ArrayList<Genre> {
     var serviceGenre = retrofitGenre.create(GetData::class.java)
     val call = serviceGenre.getGenres(apiKey,"en-US")
 
-    var genres: ArrayList<Genre> = ArrayList()
+
 
     call.enqueue(object : Callback<GenreEnc> {
         override fun onResponse(call: Call<GenreEnc>, response: Response<GenreEnc>) {
-            val responseJson = response.body()!!.genres
+            var genresArray = response.body()!!.genres
+            genreGenerator(genresArray)
         }
 
         override fun onFailure(call: Call<GenreEnc>, t: Throwable) {
@@ -40,5 +43,9 @@ fun genreMatcher(): ArrayList<Genre> {
 
     })
 
-    return genres
+
+}
+
+fun genreGenerator(array : ArrayList<Genre>): ArrayList<Genre> {
+    return array
 }
